@@ -283,3 +283,8 @@
     src: url("../fonts/SF-Pro-Icons/SF-Pro-Icons-Regular.woff2") format("woff2"), url("../fonts/SF-Pro-Icons/SF-Pro-Icons-Regular.woff") format("woff"), url("../fonts/SF-Pro-Icons/SF-Pro-Icons-Regular.ttf") format("truetype");
     /* (C) 2015 Apple Inc. All rights reserved.*/
 }
+
+@font-face {
+    font-family: 'STXingkai';
+    src: url("../fonts/STXingkai.ttf");
+}
