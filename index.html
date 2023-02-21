@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="ChenPlus Homepage'">
+    <meta name="keywords" content="ChenPlus">
+    <meta name="author" content="ChenPlus">
+    <title>Eliaukの主页</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/package.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="static/theme/index.css">
+    <link rel="stylesheet" type="text/css" href="static/css/fonts.css">
+    <script src="static/js/jquery-1.11.3.min.js"></script>
+
+    <!-- [ PLUGIN SCRIPT ] -->
+    <script src="static/js/plugins.js"></script>
+
+    <!-- [ COMMON SCRIPT ] -->
+    <script src="static/js/common.js"></script>
+
+    <script src="static/js/automaticTyping.js"></script>
+    <script src="static/js/circleMagic.js"></script>
+    <script type="text/javascript">
+        document.oncontextmenu = function () {
+			return false;
+		}
+		document.onkeydown = function () {
+			if (event.ctrlKey && window.event.keyCode == 67) {
+				return false;
+			}
+		}
+		document.onselectstart = function () {
+			return false;
+		}
+        window.onload = () => {
+            autoType(['Welcome to my little inn, I am a star, the brightest one in the night sky.',
+                '欢迎来到我的小客栈，我是一颗星，夜空中最亮的那颗.'
+            ], document.getElementById('welcome'))
+            init('main')
+            window.setInterval( () => {
+            let runDate = getRunDate('2021-01-01');
+            $('#blogRunTimeSpan').text('This blog has running : '+runDate.daysold+' d '+runDate.hrsold+' h '+runDate.minsold+' m '+runDate.seconds+' s');
+        }, 500 );
+        }
+        /**
+         * 运行时间
+         * @param dateString 年-月-日
+         */
+         function getRunDate (dateString) {
+            dateString = (dateString).toString().split('-');
+            let date = new Date();
+            date.setUTCFullYear(dateString[0], dateString[1] - 1, dateString[2]);
+            date.setUTCHours(0, 0, 0, 0);
+            let birthDay = date;
+            let today = new Date();
+            let timeold = today.getTime() - birthDay.getTime();
+            let sectimeold = timeold / 1000;
+            let secondsold = Math.floor(sectimeold);
+            let msPerDay = 24 * 60 * 60 * 1000;
+            let e_daysold = timeold / msPerDay;
+            let daysold = Math.floor(e_daysold);
+            let e_hrsold = (daysold - e_daysold) * -24;
+            let hrsold = Math.floor(e_hrsold);
+            let e_minsold = (hrsold - e_hrsold) * -60;
+            let minsold = Math.floor((hrsold - e_hrsold) * -60);
+            let seconds = Math.floor((minsold - e_minsold) * -60).toString();
+            return {
+                daysold: daysold,
+                hrsold: hrsold,
+                minsold: minsold,
+                seconds: seconds
+            };
+        }
+    </script>
+</head>
+
+<body>
+    <div class="page-loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <div id="main" class="img tl-overflow-hidden tl-display-block tl-position-relative">
+        <div style="position: relative;z-index: 1">
+            <div class="tl-margin-top-80 tl-text-center tl-width-100-percent">
+                <span class="tl-spin-hover tl-text-no-select el-avatar el-avatar--circle tl-background-none"
+                    style="height: 150px; width: 150px; line-height: 150px;">
+                    <img src="./static/images/avatar2.png" style="object-fit: cover;">
+                </span>
+                <div class="init_title tl-margin-top-20 tl-font-40-px tl-color-white tl-text-shadow-small tl-text-no-select">
+                    Eliauk
+                </div>
+                <div class="social-icon ac anim fadeInUp s01 delay-0-9s">
+
+                    <a class="icon vhm" target="_blank" href="https://www.eliauk.com/">
+                        <span class="box"></span>
+                        <i class="fa fa-send vhm-item"></i>
+                    </a>
+                    <a class="icon vhm" target="_blank"
+                        href="./static/images/WeChat.png">
+                        <span class="box"></span>
+                        <i class="fa fa-wechat vhm-item"></i>
+                    </a>
+                    <a class="icon vhm" target="_blank" href="./static/images/QQ.png">
+                        <span class="box"></span>
+                        <i class="fa fa-qq vhm-item"></i>
+                    </a>
+                    <a class="icon vhm" target="_blank" href="https://github.com/lzyws739307453">
+                        <span class="box"></span>
+                        <i class="fa fa-github-alt vhm-item"></i>
+                    </a>
+
+                    <a class="icon vhm" target="_blank" href="https://api.eliauk.com/">
+                        <span class="box"></span>
+                        <i class="fa fa-skyatlas vhm-item"></i>
+                    </a>
+                </div>
+                <!-- [ SOCIAL ICON END ] -->
+            </div>
+            <div class="tl-text-center tl-font-30-px tl-color-white tl-text-shadow-small tl-text-no-select">
+                <div id="welcome"></div>
+                <div class="tl-height-1-pt tl-width-70-percent tl-margin-24-auto el-divider el-divider--horizontal">
+                </div>
+                <h5 class="init_title tl-margin-15-0 tl-font-24-px tl-color-white tl-text-shadow-small">
+                    “大圣，此去欲何?”
+                </h5>
+                <h5 class="init_title tl-margin-15-0 tl-font-24-px tl-color-white tl-text-shadow-small">
+                    “踏南天，碎凌霄”
+                </h5>
+                <h5 class="init_title tl-margin-15-0 tl-font-24-px tl-color-white tl-text-shadow-small">
+                    “若一去不回……”
+                </h5>
+                <h5 class="init_title tl-margin-15-0 tl-font-24-px tl-color-white tl-text-shadow-small">
+                    “便一去不回”
+                </h5>
+            </div>
+            <div class="footer-box">
+                <!-- 标语 -->
+
+                <!-- 运行时间 -->
+                <div>
+                    <span id="blogRunTimeSpan"></span>
+                    <span class="my-face">ღゝ◡╹)ノ♡</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
