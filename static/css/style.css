@@ -145,7 +145,7 @@ a:hover .el-tag {
 ------------------------------*/
 .social-icon {
     text-align: center;
-    margin-top: 10px;
+    margin: 10px auto;
 }
 
 .social-icon .icon {
