@@ -220,7 +220,7 @@ a:hover .el-tag {
     text-align: center;
     color: rgba(255, 255, 255, 0.6);
     position: absolute;
-    bottom: 5vh;
+    bottom: 2vh;
     z-index: 1;
 }
 
@@ -230,6 +230,9 @@ a:hover .el-tag {
     margin: 0 5px;
 }
 
+.footer-box-link.el-link.el-link--default {
+    color: rgba(255, 255, 255, 0.6);
+}
 
 .wrap {
     position: relative;

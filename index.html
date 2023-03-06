@@ -7,7 +7,7 @@
     <meta name="description" content="ChenPlus Homepage'" />
     <meta name="keywords" content="ChenPlus" />
     <meta name="author" content="ChenPlus" />
-    <title>Eliaukの主页</title>
+    <title>Eliaukの小客栈</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
     <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css" />
@@ -32,7 +32,7 @@
             return false;
         };
         document.onkeydown = function () {
-            if (event.ctrlKey && window.event.keyCode == 67) {
+            if (event.ctrlKey && window.event.keyCode === 67) {
                 return false;
             }
         };
@@ -59,8 +59,6 @@
             let birthDay = date;
             let today = new Date();
             let timeold = today.getTime() - birthDay.getTime();
-            let sectimeold = timeold / 1000;
-            let secondsold = Math.floor(sectimeold);
             let msPerDay = 24 * 60 * 60 * 1000;
             let e_daysold = timeold / msPerDay;
             let daysold = Math.floor(e_daysold);
@@ -143,6 +141,9 @@
         <div>
             <span id="blogRunTimeSpan"></span>
             <span class="footer-face">ღゝ◡╹)ノ♡</span>
+        </div>
+        <div class="tl-text-shadow-small tl-margin-top-10">
+            <a class="footer-box-link el-link el-link--default" href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2023003290号</a>
         </div>
     </div>
 </body>
