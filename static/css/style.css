@@ -47,6 +47,9 @@ a:hover .el-tag {
     background-color: #ffccc7;
 }
 
+.el-avatar img {
+    margin: auto;
+}
 
 /*	LOADER
 ------------------------------*/
