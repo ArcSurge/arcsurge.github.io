@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -41,10 +42,13 @@
         };
         window.onload = () => {
             init("main-box");
-            autoType(["Welcome to my little inn, I am a star, the brightest one in the night sky.", "欢迎来到我的小客栈，我是一颗星，夜空中最亮的那颗."], document.getElementById("welcome"));
+            autoType(["Welcome to my little inn, I am a star, the brightest one in the night sky.",
+                "欢迎来到我的小客栈，我是一颗星，夜空中最亮的那颗."
+            ], document.getElementById("welcome"));
             window.setInterval(() => {
                 let runDate = getRunDate("2021-01-01");
-                $("#blogRunTimeSpan").text("This blog has running : " + runDate.daysold + " d " + runDate.hrsold + " h " + runDate.minsold + " m " + runDate.seconds + " s");
+                $("#blogRunTimeSpan").text("This blog has running : " + runDate.daysold + " d " + runDate
+                    .hrsold + " h " + runDate.minsold + " m " + runDate.seconds + " s");
             }, 500);
         };
         /**
@@ -87,7 +91,8 @@
                 style="height: 150px; width: 180px; line-height: 150px">
                 <img src="./static/images/icon_avatar.svg" style="object-fit: cover" />
             </span>
-            <div class="init_title tl-margin-top-20 tl-font-40-px tl-color-white tl-text-shadow-small tl-text-no-select">
+            <div
+                class="init_title tl-margin-top-20 tl-font-40-px tl-color-white tl-text-shadow-small tl-text-no-select">
                 Eliauk
             </div>
             <div class="social-icon ac anim fadeInUp s01 delay-0-9s">
@@ -117,7 +122,9 @@
         </div>
         <div class="tl-text-center tl-font-30-px tl-color-white tl-text-shadow-small tl-text-no-select">
             <div id="welcome"></div>
-            <div class="tl-height-1-pt tl-width-70-percent tl-margin-top-5 tl-margin-bottom-10 tl-margin-auto el-divider el-divider--horizontal"></div>
+            <div
+                class="tl-height-1-pt tl-width-70-percent tl-margin-top-5 tl-margin-bottom-10 tl-margin-auto el-divider el-divider--horizontal">
+            </div>
             <div class="tl-overflow-hidden">
                 <h5 class="init_title tl-margin-20-0 tl-font-24-px tl-color-white tl-text-shadow-small">
                     “大圣，此去欲何?”
@@ -143,8 +150,14 @@
             <span class="footer-face">ღゝ◡╹)ノ♡</span>
         </div>
         <div class="tl-text-shadow-small tl-margin-top-10">
+            <a class="footer-box-link el-link el-link--default" href="https://beian.miit.gov.cn/" target="_blank">
+                <img src="./static/images/record-icon.png" class="record-icon" style="object-fit: cover" />
+                <span>豫公网安备41142402000631号</span>
+            </a>
+            |
             <a class="footer-box-link el-link el-link--default" href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2023003290号</a>
         </div>
     </div>
 </body>
+
 </html>

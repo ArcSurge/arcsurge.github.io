@@ -237,6 +237,12 @@ a:hover .el-tag {
     color: rgba(255, 255, 255, 0.6);
 }
 
+img.record-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
 .wrap {
     position: relative;
 }
