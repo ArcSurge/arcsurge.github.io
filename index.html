@@ -5,12 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="ChenPlus Homepage'" />
-    <meta name="keywords" content="ChenPlus" />
-    <meta name="author" content="ChenPlus" />
-    <title>Eliaukの小客栈</title>
-    <link rel="shortcut icon" type="image/svg" href="favicon.svg" />
-
+    <meta name="description" content="ArcSurge Homepage" />
+    <meta name="keywords" content="ArcSurge" />
+    <meta name="author" content="ArcSurge" />
+    <title>ArcSurgeの小客栈</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="static/css/animation.css" />
     <link rel="stylesheet" type="text/css" href="static/css/package.css" />
@@ -47,10 +46,10 @@
             ], document.getElementById("welcome"));
             window.setInterval(() => {
                 let runDate = getRunDate("2021-01-01");
-                $("#blogRunTimeSpan").text("This blog has running : " + runDate.daysold + " d " + runDate
-                    .hrsold + " h " + runDate.minsold + " m " + runDate.seconds + " s");
+                $("#blogRunTimeSpan").text("This blog has running : " + runDate.daysold + " d " + runDate.hrsold + " h " + runDate.minsold + " m " + runDate.seconds + " s");
             }, 500);
         };
+
         /**
          * 运行时间
          * @param dateString 年-月-日
@@ -82,82 +81,64 @@
 </head>
 
 <body>
-    <div class="page-loader-wrapper">
-        <div class="loader"></div>
-    </div>
-    <div id="main-box" class="background_img tl-overflow-hidden tl-display-block tl-position-relative">
-        <div class="tl-margin-top-80 tl-text-center tl-width-100-percent">
-            <span class="tl-text-no-select el-avatar tl-background-none"
-                style="height: 150px; width: 180px; line-height: 150px">
-                <img src="./static/images/icon_avatar.svg" style="object-fit: cover" />
-            </span>
-            <div
-                class="init_title tl-margin-top-20 tl-font-40-px tl-color-white tl-text-shadow-small tl-text-no-select">
-                Eliauk
-            </div>
-            <div class="social-icon ac anim fadeInUp s01 delay-0-9s">
-                <a class="icon vhm" target="_blank" href="https://www.eliauk.com/">
-                    <span class="box"></span>
-                    <i class="fa fa-send vhm-item"></i>
-                </a>
-                <a class="icon vhm" target="_blank" href="./static/images/WeChat.png">
-                    <span class="box"></span>
-                    <i class="fa fa-wechat vhm-item"></i>
-                </a>
-                <a class="icon vhm" target="_blank" href="./static/images/QQ.png">
-                    <span class="box"></span>
-                    <i class="fa fa-qq vhm-item"></i>
-                </a>
-                <a class="icon vhm" target="_blank" href="https://github.com/lzyws739307453">
-                    <span class="box"></span>
-                    <i class="fa fa-github-alt vhm-item"></i>
-                </a>
-
-                <a class="icon vhm" target="_blank" href="https://api.eliauk.com/">
-                    <span class="box"></span>
-                    <i class="fa fa-skyatlas vhm-item"></i>
-                </a>
-            </div>
-            <!-- [ SOCIAL ICON END ] -->
+<div class="page-loader-wrapper">
+    <div class="loader"></div>
+</div>
+<div id="main-box" class="background_img tl-overflow-hidden tl-display-block tl-position-relative">
+    <div class="tl-margin-top-80 tl-text-center tl-width-100-percent">
+        <div class="tl-text-no-select el-avatar tl-background-none">
+            <img src="static/images/avatar.png" style="object-fit: cover" alt="avatar" />
         </div>
-        <div class="tl-text-center tl-font-30-px tl-color-white tl-text-shadow-small tl-text-no-select">
+        <div class="init_title tl-margin-top-20 tl-font-40-px tl-color-white tl-text-shadow-small tl-text-no-select">
+            ArcSurge
+        </div>
+        <div class="social-icon ac anim fadeInUp s01 delay-0-9s">
+            <a class="icon vhm" target="_blank" href="https://www.eliauk.top/"> <span class="box"></span>
+                <i class="fa fa-send vhm-item"></i> </a>
+            <a class="icon vhm" target="_blank" href="./static/images/WeChat.png"> <span class="box"></span>
+                <i class="fa fa-wechat vhm-item"></i> </a>
+            <a class="icon vhm" target="_blank" href="./static/images/QQ.png"> <span class="box"></span>
+                <i class="fa fa-qq vhm-item"></i> </a>
+            <a class="icon vhm" target="_blank" href="https://github.com/arcsurge"> <span class="box"></span>
+                <i class="fa fa-github-alt vhm-item"></i> </a>
+            <a class="icon vhm" target="_blank" href="https://api.eliauk.top/"> <span class="box"></span>
+                <i class="fa fa-skyatlas vhm-item"></i> </a>
+        </div>
+        <!-- [ SOCIAL ICON END ] -->
+    </div>
+    <div class="tl-text-center tl-font-30-px tl-color-white tl-text-shadow-small tl-text-no-select">
+        <div class="tl-height-72">
             <div id="welcome"></div>
-            <div
-                class="tl-height-1-pt tl-width-70-percent tl-margin-top-5 tl-margin-bottom-10 tl-margin-auto el-divider el-divider--horizontal">
-            </div>
-            <div class="tl-overflow-hidden">
-                <h5 class="init_title tl-margin-20-0 tl-font-24-px tl-color-white tl-text-shadow-small">
-                    “大圣，此去欲何?”
-                </h5>
-                <h5 class="init_title tl-margin-20-0 tl-font-24-px tl-color-white tl-text-shadow-small">
-                    “踏南天，碎凌霄”
-                </h5>
-                <h5 class="init_title tl-margin-20-0 tl-font-24-px tl-color-white tl-text-shadow-small">
-                    “若一去不回……”
-                </h5>
-                <h5 class="init_title tl-margin-20-0 tl-font-24-px tl-color-white tl-text-shadow-small">
-                    “便一去不回”
-                </h5>
-            </div>
+            <div class="tl-height-1-pt tl-width-70-percent tl-margin-top-5 tl-margin-bottom-10 tl-margin-auto el-divider el-divider--horizontal"></div>
+        </div>
+        <div class="tl-overflow-hidden">
+            <h5 class="init_title tl-margin-20-0 tl-font-24-px tl-color-white tl-text-shadow-small">
+                “大圣，此去欲何?”
+            </h5>
+            <h5 class="init_title tl-margin-20-0 tl-font-24-px tl-color-white tl-text-shadow-small">
+                “踏南天，碎凌霄”
+            </h5>
+            <h5 class="init_title tl-margin-20-0 tl-font-24-px tl-color-white tl-text-shadow-small">
+                “若一去不回……”
+            </h5>
+            <h5 class="init_title tl-margin-20-0 tl-font-24-px tl-color-white tl-text-shadow-small">
+                “便一去不回”
+            </h5>
         </div>
     </div>
-    <div class="footer-box">
-        <!-- 标语 -->
-
-        <!-- 运行时间 -->
-        <div>
-            <span id="blogRunTimeSpan"></span>
-            <span class="footer-face">ღゝ◡╹)ノ♡</span>
-        </div>
-        <div class="tl-text-shadow-small tl-margin-top-10">
-            <a class="footer-box-link el-link el-link--default" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41142402000631" target="_blank">
-                <img src="./static/images/record-icon.png" class="record-icon" style="object-fit: cover" />
-                <span>豫公网安备41142402000631号</span>
-            </a>
-            |
-            <a class="footer-box-link el-link el-link--default" href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2023003290号</a>
-        </div>
+</div>
+<div class="footer-box">
+    <!-- 运行时间 -->
+    <div>
+        <span id="blogRunTimeSpan"></span> <span class="footer-face">ღゝ◡╹)ノ♡</span>
     </div>
+    <div class="tl-text-shadow-small tl-margin-top-10">
+        <a class="footer-box-link el-link el-link--default" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41142402000631" target="_blank">
+            <img src="./static/images/record-icon.png" class="record-icon" style="object-fit: cover" alt="record" />
+            <span>豫公网安备41142402000631号</span> </a> |
+        <a class="footer-box-link el-link el-link--default" href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2023003290号</a>
+    </div>
+</div>
 </body>
 
 </html>

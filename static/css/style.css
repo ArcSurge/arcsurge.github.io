@@ -5,7 +5,6 @@ html > * {
 }
 
 #main-box {
-    box-shadow: none;
     position: relative;
     height: 100vh;
     overflow-x: hidden;
@@ -47,8 +46,17 @@ a:hover .el-tag {
     background-color: #ffccc7;
 }
 
-.el-avatar img {
-    margin: auto;
+.el-avatar {
+    width: unset !important;
+    height: unset !important;
+}
+
+.el-avatar > img {
+    filter: drop-shadow(0px 3px 5px black) brightness(0) invert(1);
+    -webkit-filter: drop-shadow(0px 3px 5px black) brightness(0) invert(1);
+    width: 150px;
+    height: 150px;
+    margin: 10px;
 }
 
 /*	LOADER
