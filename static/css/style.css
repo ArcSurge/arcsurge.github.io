@@ -1,7 +1,7 @@
 html > * {
     font-family: "STXingkai", "Cascadia Mono", "SF Pro SC", "SF Pro Text",
-        "SF Pro Icons", "PingFang SC", "Helvetica Neue", Helvetica, Arial,
-        sans-serif;
+    "SF Pro Icons", "PingFang SC", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
 
 #main-box {
@@ -22,8 +22,7 @@ html > * {
 }
 
 #main-box.background_img {
-    background: url("../images/home_top_bg.webp") center center / cover
-        no-repeat #222222;
+    background: url("../images/home_top_bg.webp") center center / cover no-repeat #222222;
     height: 100vh;
 }
 
@@ -286,12 +285,6 @@ img.record-icon {
     position: relative;
 }
 
-.card ::v-deep * {
-    font-family: "Monaco", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
-        Cantarell, Noto Sans, sans-serif, Helvetica, Arial, Apple Color Emoji,
-        Segoe UI Emoji;
-}
-
 .card .card_cover {
     height: 150px;
     position: relative;
@@ -399,11 +392,11 @@ img.record-icon {
 
 .tl-box-shadow-mini {
     -webkit-box-shadow: 0 0 8px 0 rgba(232, 237, 250, 0.6),
-        0 2px 4px 0 rgba(232, 237, 250, 0.5) !important;
+    0 2px 4px 0 rgba(232, 237, 250, 0.5) !important;
     -moz-box-shadow: 0 0 8px 0 rgba(232, 237, 250, 0.6),
-        0 2px 4px 0 rgba(232, 237, 250, 0.5) !important;
+    0 2px 4px 0 rgba(232, 237, 250, 0.5) !important;
     box-shadow: 0 0 8px 0 rgba(232, 237, 250, 0.6),
-        0 2px 4px 0 rgba(232, 237, 250, 0.5) !important;
+    0 2px 4px 0 rgba(232, 237, 250, 0.5) !important;
 }
 
 .tl-box-shadow-small {
@@ -443,9 +436,9 @@ img.record-icon {
 
 .tl-card-hover-small:hover {
     box-shadow: 0 0 8px 0 rgba(232, 237, 250, 0.6),
-        0 2px 4px 0 rgba(232, 237, 250, 0.5) !important;
+    0 2px 4px 0 rgba(232, 237, 250, 0.5) !important;
     -webkit-box-shadow: 0 0 8px 0 rgba(232, 237, 250, 0.6),
-        0 2px 4px 0 rgba(232, 237, 250, 0.5) !important;
+    0 2px 4px 0 rgba(232, 237, 250, 0.5) !important;
 }
 
 .tl-border-radius-small {
@@ -458,11 +451,6 @@ img.record-icon {
     font-weight: 300 !important;
     letter-spacing: 1px !important;
     line-height: 1.5 !important;
-}
-
-.tl-h3-title {
-    border-left: var(--tl-success) solid 4px;
-    padding-left: 6px;
 }
 
 .tl-scrollbar-wrapper {
